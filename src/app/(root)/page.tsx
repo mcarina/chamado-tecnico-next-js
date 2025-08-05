@@ -2,7 +2,6 @@
 import PageHeader from "@/components/Header";
 import { useState } from "react";
 import DashboardcardsHome from "./components/Cards/DashboardCards";
-import DiscriptionCards from "@/components/Cards/DiscriptionCards";
 import DiscriptionCardsHome from "./components/Cards/DiscriptionCards";
 
 const Home = async () => {
