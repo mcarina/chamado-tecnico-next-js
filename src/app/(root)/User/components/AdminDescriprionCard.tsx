@@ -2,6 +2,7 @@
 import { useState } from "react";
 import DiscriptionCards from "@/components/Cards/DiscriptionCards";
 import ModalComponent from "@/components/Modal";
+import ModalAdmin from "./ModalAdmin";
 
 const AdminDescriprionCard = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,13 +29,11 @@ const AdminDescriprionCard = () => {
                 em andamento
             </DiscriptionCards>
 
-            <ModalComponent isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-                <h3 className="text-lg font-semibold mb-2">Detalhes do chamado</h3>
-                <p><strong>Título:</strong> Portão da garagem com defeito</p>
-                <p><strong>Descrição:</strong> Portão não abre</p>
-                <p><strong>Status:</strong> Em andamento</p>
-                <p><strong>Usuário:</strong> João</p>
-                <p><strong>Data de criação:</strong> 04/08</p>
+            <ModalComponent 
+                isOpen={isModalOpen} 
+                onClose={() => setIsModalOpen(false)} 
+            >
+                <ModalAdmin imagens={['/path/to/image1.jpg', '/path/to/image2.jpg']} />
             </ModalComponent>
         </>
     )
