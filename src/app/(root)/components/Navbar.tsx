@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { LuMonitorSmartphone, LuBellRing, LuUserRound } from "react-icons/lu";
+import PageNavNotification from "./notifications/NavNotifications";
 
 const PageNavBar = () => {
   return (
@@ -16,7 +17,7 @@ const PageNavBar = () => {
           </div>
           <div className="flex items-center space-x-4">
             <button>
-              <LuBellRing className="h-5 w-5" />
+              <PageNavNotification/>
             </button>
             <Link href="/User">
             <button>
