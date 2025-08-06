@@ -3,6 +3,7 @@ import PageHeader from "@/components/Header";
 import { useState } from "react";
 import DashboardcardsHome from "./components/Cards/DashboardCards";
 import DiscriptionCardsHome from "./components/Cards/DiscriptionCards";
+import ButtonCall from "./components/buttons/ButtonCall";
 
 const Home = async () => {
 
@@ -15,6 +16,7 @@ const Home = async () => {
                     title={`Bem-vindo, ${userType === "morador" ? "João" : "Síndico"}!`}
                     subtitle="Acompanhe os chamados técnicos de forma simples e rápida."
                 />
+                <ButtonCall/>
                 <DashboardcardsHome/>
                 <DiscriptionCardsHome/>
             </div>
