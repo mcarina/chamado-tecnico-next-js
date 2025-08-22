@@ -21,11 +21,10 @@ const PageNavNotification = () => {
 
     return (
         <>
-            <div className="flex items-center space-x-4 relative" ref={dropdownRef}>
+            <div className="" ref={dropdownRef}>
                 {/* Notificação */}
                 <button
                     onClick={() => setShowDropdown(!showDropdown)}
-                    className="relative"
                 >
                     <LuBellRing className="h-6 w-6 text-gray-700" />
                     <span className="absolute -top-1 -right-1 inline-flex items-center justify-center px-1.5 py-0.5 text-xs font-bold leading-none text-white bg-red-600 rounded-full">

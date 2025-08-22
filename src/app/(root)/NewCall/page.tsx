@@ -1,7 +1,7 @@
 import PageHeader from "@/components/Header";
 import FormNewCall from "./components/Form";
 
-const NewCall = async () => {
+export default function NewCall() {
     return (
         <section className="p-6 space-y-6">
             <div className="max-w-7xl mx-auto">
@@ -14,4 +14,3 @@ const NewCall = async () => {
         </section>
     );
 }
-export default NewCall

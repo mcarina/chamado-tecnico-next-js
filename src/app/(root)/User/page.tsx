@@ -1,7 +1,7 @@
 import DashboardcardsHome from "../components/Cards/DashboardCards";
 import AdminDescriprionCard from "./components/AdminDescriprionCard";
 
-const PageUser = async () => {
+export default function PageUser() {
     return (
         <section className="p-6 space-y-6">
             <div className="max-w-7xl mx-auto">
@@ -17,4 +17,3 @@ const PageUser = async () => {
         </section>
     );
 }
-export default PageUser

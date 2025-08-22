@@ -5,18 +5,23 @@ import DashboardcardsHome from "./components/Cards/DashboardCards";
 import DiscriptionCardsHome from "./components/Cards/DiscriptionCards";
 import ButtonCall from "./components/buttons/ButtonCall";
 
-const Home = async () => {
+export default function Home () {
 
     const [userType] = useState<"morador" | "sindico">("morador")
 
     return (
-        <section className="p-6 space-y-6">
-            <div className="max-w-7xl mx-auto">
-                <PageHeader
-                    title={`Bem-vindo, ${userType === "morador" ? "João" : "Síndico"}!`}
-                    subtitle="Acompanhe os chamados técnicos de forma simples e rápida."
-                />
-                <ButtonCall />
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+            <div className="mb-8 animate-slide-up">
+                <div className="flex items-center justify-between">
+                    <div>
+                        <PageHeader
+                            title={`Bem-vindo, ${userType === "morador" ? "João" : "Síndico"}!`}
+                            subtitle="Acompanhe os chamados técnicos de forma simples e rápida."
+                        />
+                    </div>
+                    <ButtonCall />
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mb-8">
                     <DashboardcardsHome/>
                 </div>
@@ -27,4 +32,3 @@ const Home = async () => {
         </section>
     );
 }
-export default Home

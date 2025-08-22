@@ -1,9 +1,15 @@
 import DiscriptionCards from "@/components/Cards/DiscriptionCards";
+import { LuChartLine } from "react-icons/lu";
 
 const DiscriptionCardsHome = () => {
     return (
         <>
-            <h2 className="text-xl font-semibold">Chamados Recentes:</h2>
+            <div className="flex items-center space-x-3">
+                <div className="bg-primary/10 p-2 rounded-lg">
+                    <LuChartLine className="h-5 w-5 text-primary"/>
+                </div>
+             <h2 className="text-xl font-semibold">Chamados Recentes:</h2>
+            </div>
 
             <DiscriptionCards
                 title="Portao da caragem com defeito"
