@@ -1,16 +1,33 @@
+import Participant from "./components/Participant";
+import Details from "./components/Details";
+import CalledHeader from "./components/Header";
+
 export default function CalledId() {
     return (
-        <section className="p-6 space-y-6">
-            <div className="max-w-7xl mx-auto">
-                <div className="flex gap-6 items-start">
-                    <div className="flex-1 space-y-4 rounded-xl shadow p-4 bg-white border">
-                      
+        <section className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+            <div className="container mx-auto px-4 py-6 max-w-7xl">
+                <CalledHeader
+                    title="Lampada do corredor queimada"
+                    status="Aguardando"
+                    footer={<> <span>Criado em: 04/08</span> </>}
+                />
+
+                <div className="grid lg:grid-cols-3 gap-6 mt-8">
+                    <div className="lg:col-span-2 space-y-6"> 
+                        <Details/>
                     </div>
-                    <div className="w-64 space-y-4 rounded-xl shadow p-4 bg-white border">
-                        {/* <DashboardcardsHome /> */}
+
+                    <div className="space-y-6">
+                        <Participant
+                            title="Solicitante"
+                        />
+                        <Participant
+                            title="Tecnico"
+                        />
                     </div>
                 </div>
             </div>
+
         </section>
     );
 }
