@@ -7,7 +7,7 @@ import ButtonCall from "./components/buttons/ButtonCall";
 
 export default function Home () {
 
-    const [userType] = useState<"morador" | "sindico">("morador")
+    const [userType] = useState<", morador" | "sindico">(", morador")
 
     return (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -16,7 +16,7 @@ export default function Home () {
                 <div className="flex items-center justify-between">
                     <div>
                         <PageHeader
-                            title={`Bem-vindo, ${userType === "morador" ? "João" : "Síndico"}!`}
+                            title={`Bem-vindo${userType === ", morador" ? " " : ", Síndico"}!`}
                             subtitle="Acompanhe os chamados técnicos de forma simples e rápida."
                         />
                     </div>

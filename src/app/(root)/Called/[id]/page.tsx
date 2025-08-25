@@ -1,4 +1,4 @@
-export default function PageUser() {
+export default function CalledId() {
     return (
         <section className="p-6 space-y-6">
             <div className="max-w-7xl mx-auto">
