@@ -3,7 +3,7 @@ import PageHeader from "@/components/Header";
 import { useState } from "react";
 import DashboardcardsHome from "./components/Cards/DashboardCards";
 import DiscriptionCardsHome from "./components/Cards/DiscriptionCards";
-import ButtonCall from "./components/buttons/ButtonCall";
+import Button from "@/components/Buttons";
 
 export default function Home () {
 
@@ -20,7 +20,9 @@ export default function Home () {
                             subtitle="Acompanhe os chamados técnicos de forma simples e rápida."
                         />
                     </div>
-                    <ButtonCall />
+                        <Button href="/NewCall">
+                            Novo Chamado
+                        </Button>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mb-8">
                     <DashboardcardsHome/>

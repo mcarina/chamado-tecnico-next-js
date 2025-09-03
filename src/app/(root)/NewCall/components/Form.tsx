@@ -118,7 +118,7 @@ const FormNewCall = () => {
         <div>
           <button
             type="submit"
-            className="bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm"
+            className="bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 text-white px-4 py-2 rounded-md text-sm"
           >
             Enviar chamado
           </button>

@@ -4,7 +4,7 @@ export const chamadoData = [
     titulo: "Portão da garagem com defeito",
     descricao:
       "O portão não abre completamente e faz ruído estranho ao tentar fechar. Problema começou ontem após chuva forte.",
-    status: "Em andamento",
+    status: "em andamento",
     dataCriacao: "2025-08-20",
     dataAtualizacao: "2024-01-20T14:15:00",
     solicitante: {
@@ -54,7 +54,7 @@ export const chamadoData = [
     titulo: "Lampada Queimada no corredo do 2 andar bloco b",
     descricao:
       "Lamapada queimada, a ultima troca já tem mais de 3 anos.",
-    status: "Aguardando",
+    status: "aguardando",
     dataCriacao: "2025-08-20",
     dataAtualizacao: "2024-01-20T14:15:00",
     solicitante: {

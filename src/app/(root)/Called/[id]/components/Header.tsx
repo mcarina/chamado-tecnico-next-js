@@ -34,7 +34,7 @@ const CalledHeader = ({ title, status, footer }: PageHeaderProps) => {
                     <button className="rounded-lg p-2 border-blue-200 text-blue-700 hover:bg-blue-50 bg-transparent">
                         Editar
                     </button>
-                    <button className="rounded-lg p-2 bg-blue-600 hover:bg-blue-700 text-white">
+                    <button className="rounded-lg p-2 bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 hover:bg-blue-700 text-white">
                         Concluir
                     </button>
                 </div>

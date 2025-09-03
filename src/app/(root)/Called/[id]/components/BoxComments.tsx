@@ -1,3 +1,4 @@
+import Button from "@/components/Buttons";
 import Header from "./title/headertitle";
 
 interface BoxCommentsProps {
@@ -27,12 +28,9 @@ const BoxComments = ( {title, defaultValue = "", onSubmit }:BoxCommentsProps ) =
                 />
 
                 <div className="flex justify-end">
-                <button
-                    type="submit"
-                    className="rounded-lg px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white"
-                >
-                    Enviar comentário
-                </button>
+                <Button onClick={() => console.log("clicado!")}>
+                    Enviar comentario
+                </Button>
                 </div>
             </form>
         </div>
