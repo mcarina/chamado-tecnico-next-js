@@ -37,7 +37,7 @@ const DashboardcardsHome = () => {
             </DashboradCards>
 
             <DashboradCards
-                title="Concluídos"
+                title="Concluído"
                 status="concluído"
                 number="10"
                 icon={LuCircleCheckBig}>

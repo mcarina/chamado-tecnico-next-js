@@ -4,6 +4,8 @@ import Details from "./components/Details";
 import CalledHeader from "./components/Header";
 import { chamadoData } from "@/constants";
 import { useParams } from "next/navigation";
+import Images from "./components/Images";
+import BoxComments from "./components/BoxComments";
 
 export default function CalledId() {
   const params = useParams();
@@ -22,9 +24,21 @@ export default function CalledId() {
 
                 <div className="grid lg:grid-cols-3 gap-6 mt-8">
                     <div className="lg:col-span-2 space-y-6">
-                        <Details 
+                        <Details
+                            title="Detalhes do Relato"
                             description={chamado.descricao}
                         />
+                        <Images
+                            title="Anexo aqui.jpg"
+                            size="12 kb"
+                        />
+
+                        <BoxComments
+                        title="Adicione comentários"
+                        // defaultValue="comentários a serem escritos aqui"
+                        onSubmit={(comment) => console.log("Comentário enviado:", comment)}
+                        />
+                   
                     </div>
 
                     <div className="space-y-6">
