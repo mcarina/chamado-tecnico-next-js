@@ -1,6 +1,6 @@
 import DiscriptionCards from "@/components/Cards/DiscriptionCards";
 import Link from "next/link";
-import { LuChartLine } from "react-icons/lu";
+import { LuChartLine, LuEye } from "react-icons/lu";
 import { chamadoData } from "@/constants";
 
 const DiscriptionCardsHome = () => {
@@ -27,7 +27,10 @@ const DiscriptionCardsHome = () => {
                     }
                     button={
                     <Link href={`/Called/${chamado.id}`}>
-                        <button className="text-xs ml-4 hover:text-[#3b82f6]">Ver detalhes</button>
+                        <button className="flex text-xs gap-2 hover:text-[#3b82f6]">
+                            <LuEye className="w-4 h-4"/>
+                            Ver detalhes 
+                        </button>
                     </Link>
                     }
                     
