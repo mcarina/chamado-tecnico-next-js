@@ -1,14 +1,16 @@
 import DashboradCards from "@/components/Cards/DashboradCards"
 import { LuPhone, LuAlarmClockCheck, LuInfo, LuCalendarCheck2, LuCircleCheckBig } from "react-icons/lu";
 
-const DashboardcardsHome = () => {
+const DashboardcardsHome = ({ setFilter }: { setFilter: (value: string) => void }) => {
     return (
         <>
             <DashboradCards
                 title="Total de chamados"
                 status="total"
                 number="13"
-                icon={LuPhone}>
+                icon={LuPhone}
+                onClick={() => setFilter("all")}
+                >
                 Atualizado às 10h15m
             </DashboradCards>
 
@@ -16,7 +18,9 @@ const DashboardcardsHome = () => {
                 title="Em andamento"
                 status="em andamento"
                 number="1"
-                icon={LuInfo}>
+                icon={LuInfo}
+                onClick={() => setFilter("em andamento")}
+                >
                 Atualizado às 10h15m
             </DashboradCards>
 
@@ -24,7 +28,9 @@ const DashboardcardsHome = () => {
                 title="Aguardando"
                 status="aguardando"
                 number="1"
-                icon={LuAlarmClockCheck}>
+                icon={LuAlarmClockCheck}
+                onClick={() => setFilter("aguardando")}
+                >
                 Atualizado às 10h15m
             </DashboradCards>
 
@@ -32,7 +38,9 @@ const DashboardcardsHome = () => {
                 title="Agendados"
                 status="agendado"
                 number="1"
-                icon={LuCalendarCheck2}>
+                icon={LuCalendarCheck2}
+                onClick={() => setFilter("agendado")}
+                >
                 Atualizado às 10h15m
             </DashboradCards>
 
@@ -40,7 +48,9 @@ const DashboardcardsHome = () => {
                 title="Concluído"
                 status="concluído"
                 number="10"
-                icon={LuCircleCheckBig}>
+                icon={LuCircleCheckBig}
+                onClick={() => setFilter("concluído")}
+                >
                 Atualizado às 10h15m
             </DashboradCards>
         </>

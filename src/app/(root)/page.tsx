@@ -8,6 +8,7 @@ import Button from "@/components/Buttons";
 export default function Home () {
 
     const [userType] = useState<", morador" | "sindico">(", morador")
+    const [filter, setFilter] = useState<string>("all")
 
     return (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -25,10 +26,10 @@ export default function Home () {
                         </Button>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mb-8">
-                    <DashboardcardsHome/>
+                    <DashboardcardsHome setFilter={setFilter}/>
                 </div>
                 <div className="space-y-4 rounded-xl shadow p-4 bg-white border">
-                    <DiscriptionCardsHome />
+                    <DiscriptionCardsHome filter={filter}/>
                 </div>
             </div>
         </section>

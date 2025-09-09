@@ -3,7 +3,10 @@ import Link from "next/link";
 import { LuChartLine, LuEye } from "react-icons/lu";
 import { chamadoData } from "@/constants";
 
-const DiscriptionCardsHome = () => {
+const DiscriptionCardsHome = ({ filter }: { filter: string }) => {
+    const filteredChamados = chamadoData.filter((chamado) => 
+        filter === "all" ? true : chamado.status === filter
+    )
     return (
         <>
             <div className="flex items-center space-x-3">
@@ -13,7 +16,7 @@ const DiscriptionCardsHome = () => {
              <h2 className="text-xl font-semibold">Chamados Recentes:</h2>
             </div>
 
-            {chamadoData.map((chamado) => (
+            {filteredChamados.map((chamado) => (
                 <DiscriptionCards
                     title={chamado.titulo}
                     descricao={chamado.descricao}
