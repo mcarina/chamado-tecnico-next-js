@@ -4,6 +4,7 @@ import { LuPhone, LuAlarmClockCheck, LuInfo, LuCalendarCheck2, LuCircleCheckBig 
 const DashboardcardsHome = ({ setFilter }: { setFilter: (value: string) => void }) => {
     return (
         <>
+
             <DashboradCards
                 title="Total de chamados"
                 status="total"

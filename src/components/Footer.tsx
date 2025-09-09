@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <p className="text-blue-100 text-sm">© 2025 CallTech. Todos os direitos reservados.</p>
                         <div className="flex items-center space-x-6 mt-4 md:mt-0">
-                            <Link href="#" className="flex items-center space-x-1 text-blue-100 text-sm">
+                            <Link href="/Suporte" className="flex items-center space-x-1 text-blue-100 text-sm">
                                 <LuPhone className="h-4 w-4 mr-2 mt-0" />
                                 Suporte
                             </Link>

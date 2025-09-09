@@ -13,7 +13,10 @@ const DashboradCards = ({ title, number, children, icon: Icon, status, onClick }
   const colorClasses = status ? getStatusColor(status) : "border-gray-200";
 
   return (
-    <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-8" onClick={onClick}>
+    <article 
+    className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-5 gap-6 mb-8" 
+    onClick={onClick}
+    >
       <div className={`rounded-xl shadow p-6 bg-white border min-w-[200px] ${colorClasses}`}>
           <header className="flex flex-row items-center justify-between space-y-0 pb-2">
               {Icon && <Icon className="w-5 h-5 text-blue-500" />}
