@@ -6,18 +6,18 @@ import { LuBellRing } from "react-icons/lu";
 
 const PageNavNotification = () => {
     const [showDropdown, setShowDropdown] = useState(false);
-    const dropdownRef = useRef(null);
+    const dropdownRef = useRef<HTMLDivElement | null>(null);
 
-    // Fechar dropdown ao clicar fora
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
-            if (dropdownRef.current && !(dropdownRef.current as any).contains(event.target)) {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
                 setShowDropdown(false);
             }
         }
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
+
 
     return (
         <>

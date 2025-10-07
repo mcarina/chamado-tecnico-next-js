@@ -18,6 +18,7 @@ const DiscriptionCardsHome = ({ filter }: { filter: string }) => {
 
             {filteredChamados.map((chamado) => (
                 <DiscriptionCards
+                    key={chamado.id}
                     title={chamado.titulo}
                     descricao={chamado.descricao}
                     status={chamado.status}

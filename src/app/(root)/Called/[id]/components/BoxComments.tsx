@@ -3,10 +3,9 @@ import Header from "./title/headertitle";
 
 interface BoxCommentsProps {
     title: string;
-    defaultValue?: string;
     onSubmit?: (comment: string) => void;
 }
-const BoxComments = ( {title, defaultValue = "", onSubmit }:BoxCommentsProps ) => {
+const BoxComments = ( {title, onSubmit }:BoxCommentsProps ) => {
     return (
         <div className="rounded-xl shadow p-6 bg-white border min-w-[200px]">
             <Header title={title}/>

@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { LuFileImage } from "react-icons/lu";
@@ -75,7 +76,7 @@ const FormNewCall = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {fotosPreview.map((preview, index) => (
                 <div key={index} className="relative group">
-                  <img
+                  <Image
                     src={preview || "/placeholder.svg"}
                     alt={`Preview ${index + 1}`}
                     className="w-full h-32 object-cover rounded-lg border"
