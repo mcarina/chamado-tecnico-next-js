@@ -8,9 +8,9 @@ export default function PageUser() {
                 <div className="gap-6 items-start">
                     <div className="flex-1 space-y-4 rounded-xl shadow p-4 bg-white border">
                       <CardUser
-                        name="usuarioaq"
-                        email="user@email.com"
-                        telefone="(92) 9 9999-9999"
+                        name="João Silva Matos"
+                        email="joao.silva@empresa.com"
+                        telefone="(92) 99999-9999"
                         ap= "Bloco c, rua 2, apart.201"
 
                       />

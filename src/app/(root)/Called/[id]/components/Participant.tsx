@@ -16,7 +16,7 @@ const Participant = ({ title, subtitle, email, telefone, name }: ParticipantProp
 
                 <div className="space-y-2">
                     <h4 className="text-lg font-semibold text-gray-900">
-                        {name}
+                        - {name}
                     </h4>
                     <p className="text-sm text-gray-500 flex items-center">{subtitle}</p>
                 </div>
